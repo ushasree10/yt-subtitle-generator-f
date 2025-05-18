@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app-bg {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flashy-title {
+  font-size: 2.8rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.url-input {
+  border-radius: 30px 0 0 30px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: none;
+}
+
+.submit-btn {
+  border-radius: 0 30px 30px 0;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  border: none;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  box-shadow: 0 0 12px #7873f5;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px #ff6ec4;
+}
+
+.video-wrapper iframe {
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 234, 0.3);
+}
+
+.subtitle-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff22;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.subtitle-card:hover {
+  transform: scale(1.02);
+}
+
+/* Custom placeholder style */
+.url-input::placeholder {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #303033;
+  font-style: italic;
+  letter-spacing: 0.5px;
 }
